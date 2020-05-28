@@ -299,6 +299,8 @@ mean(cars$Weight[cars$Cylinders == 8])
 
 mean(cars$Weight[cars$Origin == "Japan" ])
 
+#Extract all the information of the cars which has MPG more than 40
+cars[(cars$MPG > 40),]
 
 # k. Randomly select 20 cars from the given list of cars.
 sample(cars$Car,20,replace = TRUE)
