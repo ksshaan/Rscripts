@@ -306,6 +306,9 @@ cars[(cars$MPG > 40),]
 sample(cars$Car,20,replace = TRUE)
 
 mean(mtcars$mpg)
+#Name the cars which has MPG more than 40 and Acceleration less than 20 or
+# the car has three cylinders
+cars$Car[(cars$MPG > 40 & (cars$Acceleration < 20 | cars$Cylinders == 3))]
 
 
 
